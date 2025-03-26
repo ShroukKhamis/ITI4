@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <section class="position-relative container-fluid p-0">
+        <img src="../img/5101.jpg_wh1200.jpg" class="w-100" style="height: 400px; object-fit: cover;"
+            alt="Doctors Team">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center ps-5 text-white"
+            style="background: rgba(0, 0, 0, 0.4);">
+            <h1 class="fw-bold">Best Vacation Rentals</h1>
+            <p class="lead">Sed placerat fringilla quam</p>
+            <a href="#" class="btn btn-primary btn-lg w-25">Start Now!</a>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <div class="container my-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card text-center border-0 shadow-lg">
+                    <img class="card-img-top rounded-circle mx-auto d-block mt-3" src="../img/doctor-8461303_1280.jpg"
+                        style="width: 150px; height: 150px; object-fit: cover;" alt="Doctor Image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Expert in healthcare services with years of experience.</p>
+                        <button onclick="increaseBadge('badge3')" class="btn btn-info">
+                            Book Now @ $799 <span id="badge3" class="badge bg-danger">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card text-center border-0 shadow-lg">
+                    <img class="card-img-top rounded-circle mx-auto d-block mt-3" src="../img/OIP.jpeg"
+                        style="width: 150px; height: 150px; object-fit: cover;" alt="Doctor Image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Experienced medical professional ready to serve.</p>
+                        <button onclick="increaseBadge('badge3')" class="btn btn-info">
+                            Book Now @ $799 <span id="badge3" class="badge bg-danger">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card text-center border-0 shadow-lg">
+                    <img class="card-img-top rounded-circle mx-auto d-block mt-3"
+                        src="../img/doctor-pictures-l5y1qs2998u7rf0x.jpg"
+                        style="width: 150px; height: 150px; object-fit: cover;" alt="Doctor Image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Trusted by thousands for quality healthcare services.</p>
+                        <button onclick="increaseBadge('badge3')" class="btn btn-info">
+                            Book Now @ $799 <span id="badge3" class="badge bg-danger">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white text-center py-3">
+        <p class="mb-1">© 2023 Vacation Rentals</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-white text-decoration-none">About Us</a>
+            <a href="#" class="text-white text-decoration-none">Support 24/7</a>
+            <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+        </div>
+    </footer>
+    <script>
+        function increaseBadge(badgeId) {
+            let badge = document.getElementById(badgeId);
+            let currentCount = parseInt(badge.innerText);
+            badge.innerText = currentCount + 1;
+        }
+    </script>
+</body>
+
+</html>
