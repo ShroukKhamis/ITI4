@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(82, 61, 179);
+
+}
+
+h3 {
+    text-align: center;
+    color: rgb(170, 72, 170);
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+div {
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+}

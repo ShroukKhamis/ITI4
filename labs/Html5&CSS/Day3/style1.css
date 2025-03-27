@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    background-image: url(tasks/grass.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: relative;
+}
+
+.container1 {
+    display: relative;
+}
+
+.player1 {
+    width: 150px;
+}
+
+.player2 {
+    width: 150px;
+}
+
+.ball {
+
+    border-radius: 50%;
+    animation: playball 5s linear infinite;
+    animation-direction: alternate;
+    position: absolute;
+    left: 300px;
+    bottom: 110px;
+}
+
+@keyframes playball {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+
+        transform: translateX(800px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+
+}

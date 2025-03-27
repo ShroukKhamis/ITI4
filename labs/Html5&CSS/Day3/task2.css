@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(241, 125, 41);
+    color: white;
+    display: flex;
+    padding: 0 10px;
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li :hover {
+    color: yellow;
+}
+
+.main {
+    height: 100vh;
+    background-image: url(tasks/house3.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    height: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(158, 158, 252, 0.1);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+figure:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+figure {
+
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(233, 142, 77);
+    color: white;
+    display: flex;
+    padding: 0 600px;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(80, 115, 219);
+    border-radius: 50% 50% 0 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 10px;
+}
+
+.mes {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(80, 115, 219);
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px 1px gray;
+    bottom: 40px;
+    padding: 10;
+    right: 40px;
+}
+
+.btn:hover .mes {
+    display: block;
+}
+
+@media (max-width: 992px) {
+    figure {
+        width: 50%;
+    }
+}
+
+@media (max-width: 786px) {
+    figure {
+        width: 75%;
+    }
+}
+
+@media (max-width: 786px) {
+    figure {
+        width: 100%;
+    }
+}

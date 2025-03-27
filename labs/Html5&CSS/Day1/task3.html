@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="color" id="color">
+    <canvas style="border: 1px solid black;" width="500px" height=500px">
+        <script>
+            let canvas = document.querySelector("canvas");
+            let color = document.querySelector("#color");
+            let circle = canvas.getContext("2d");
+            color.addEventListener("input", function ()
+            {
+                circle.clearRect(0, 0, 500, 500);
+                for (let i = 0; i < 10; i++)
+                {
+                    circle.strokeStyle = color.value;
+                    circle.beginPath();
+                    circle.arc(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), 20, 0, 2 * Math.PI);
+                    circle.stroke();
+                }
+
+            })
+
+
+        </script>
+
+    </canvas>
+</body>
+
+</html>

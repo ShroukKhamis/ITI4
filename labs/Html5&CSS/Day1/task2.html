@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Range</title>
+</head>
+
+<body>
+    <input type="range" name="range" id="red" value="" min="0" max="255">Red
+    <input type="range" name="range" id="green" value="" min="0" max="255">geen
+    <input type="range" name="range" id="blue" min="0" max="255">blue
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis doloribus numquam laborum alias, consectetur
+        earum est excepturi explicabo sequi facere deserunt vitae, adipisci esse sit placeat nisi in, nihil non?</p>
+
+
+    <label for="progress">progress</label>
+    <progress id="progress" value="10"  min="0" max="100"></progress>
+    <span>0%</span>
+
+
+
+    <script>
+        // task 2 modifcation
+        let progress = document.getElementById("progress");
+        setInterval(() => {
+            progress.value++;
+            if (progress.value == 100)
+            {
+                progress.value = 0;
+            }
+            span = document.querySelector("span");
+            span.innerHTML = `${progress.value}%`;
+            
+        }, 1000);
+        let red = document.getElementById("red");
+        let green = document.getElementById("green");
+        let blue = document.getElementById("blue");
+        let p = document.querySelector("p");
+        p.style.color = `rgb(${red.value},${green.value},${blue.value})`;
+        red.oninput = function ()
+        {
+            p.style.color = `rgb(${red.value},${green.value},${blue.value})`;
+        }
+        green.oninput = function ()
+        {
+            p.style.color = `rgb(${red.value},${green.value},${blue.value})`;
+
+        }
+        blue.oninput = function ()
+        {
+            p.style.color = `rgb(${red.value},${green.value},${blue.value})`;
+        }
+
+    </script>
+</body>
+
+</html>

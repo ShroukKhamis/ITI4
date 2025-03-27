@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav {
+    background-color: cadetblue;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 660px;
+
+}
+
+.maincontent {
+    width: 50%;
+
+    padding: 40px;
+    background-color: rgb(100, 146, 54);
+}
+
+.sidenav {
+    width: 25%;
+    padding: 40px;
+    background-color: rgb(168, 94, 94);
+    border: 2px solid white;
+
+}
+
+footer {
+    background-color: cadetblue;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 3px;
+}
